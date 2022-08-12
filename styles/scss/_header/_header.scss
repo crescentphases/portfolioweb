@@ -1,0 +1,57 @@
+.header {
+  margin-top: 57px;
+}
+.header__container {
+ 
+  .navbar {
+  display: flex;
+  align-items: center;
+
+    &-nav {
+      display: flex;
+      margin-left: 56px;
+    }
+    .nav__menu {
+      display: flex;
+      gap: 48px;
+
+      .menu__item {
+        list-style: none;
+      }
+      .item__link {
+        text-decoration: none;
+        color: white;
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 16px;
+        color: $secondaryColor;
+        transition: 0.1s color;
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+  .menu {
+    flex: 1 1 auto;
+  }  
+  .order__button {  
+    padding: 0;
+    border: none;
+    width: 168px;
+    height: 47px;
+    border-radius: 6px;
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
+    line-height: 28px;
+    background-color: $buttonPrimary;
+    color: $primaryColor;
+    cursor: pointer;
+    &:hover {
+      background-image: $buttonHover;
+      
+    }
+  }
+  
+  
+}

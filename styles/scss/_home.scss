@@ -1,0 +1,13 @@
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100%;
+}
+/*--------------------Header--------------------*/
+@import './_header/header';
+/*--------------------/Header--------------------*/
+/*--------------------Main--------------------*/
+@import './_main/main';
+/*--------------------/Main--------------------*/

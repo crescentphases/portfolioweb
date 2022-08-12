@@ -1,0 +1,24 @@
+@import './scss/vars';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html body {
+  background-color: $backgroundColor;
+}
+
+[class*="_container"] {
+  max-width: 1024px;
+  margin: 0px auto;
+}
+/*--------------------Home--------------------*/
+@import './scss/home';
+/*--------------------/Home--------------------*/
+
+
+
+
+

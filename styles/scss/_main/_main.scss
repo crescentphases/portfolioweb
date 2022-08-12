@@ -1,0 +1,117 @@
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromBottom{
+  0% {
+    transform: translateY(500%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes opacityFromZero{
+  0% {
+   opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.main {
+  margin-top: 118px;
+  &__container {
+    display: flex;
+    justify-content: center;
+}
+&__block {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 30%;
+  animation: 0.77s ease-out opacityFromZero;
+}
+&__title {
+  color: $primaryColor;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 54px;
+  span {
+    font-weight: 700;
+  }
+}
+&__text {
+  text-align: left;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $secondaryColor;
+  margin-top: 15px;
+}
+&__overview {
+  display: flex;
+  align-items: center;
+  margin-top: 43px;
+  gap: 13px;
+  .overview__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: $primaryColor;
+    cursor: pointer;
+  }
+  .overview__button {
+    border: none;
+    background: url("../../../icons/arrow_button.svg");
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+ 
+}
+&__info {
+  margin-top: 66px;
+  display: flex;
+  gap: 32px;
+  .info__card {
+    .card__title {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.1em;
+      color: $secondaryColor;
+    }
+    .card__data {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      color: $primaryColor;
+      margin-top: 8px;
+    }
+    animation: 0.55s ease-out slideInFromBottom;
+  }
+}
+
+
+&__image{
+display: flex;
+flex: 1 1 50%;
+justify-content: flex-end;
+animation: 0.66s ease-out slideInFromLeft;
+}
+}
